@@ -1,0 +1,8 @@
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\bin\Debug\CSharpTest.dll
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\bin\Debug\CSharpTest.pdb
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\obj\Debug\CSharpTest.csprojResolveAssemblyReference.cache
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\obj\Debug\CSharpTest.dll
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\obj\Debug\CSharpTest.pdb
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\bin\Debug\WorkDayCalculatorProj.exe
+C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\CSharpTest\bin\Debug\WorkDayCalculatorProj.pdb
