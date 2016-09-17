@@ -1,0 +1,100 @@
+﻿@model PeopleTable.ViewModels.PeopleViewModel
+
+@{
+    ViewBag.Title = "People";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <h1>@ViewBag.Title</h1>
+    
+    <div class="row">
+        @using (Html.BeginForm("People", "Home", new { page = Model.Pager.CurrentPage, pageSize = Model.Pager.PageSize }))
+        {
+            @Html.Hidden("page", Model.Pager.CurrentPage)
+            <div class="col-lg-2">
+                @Html.DropDownList("pageSize", new SelectList(new List<int> { 5, 10, 20, 50 }), "Page Size", new { @class = "form-control", onchange = "this.form.submit()" })
+            </div>
+        }
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Tags</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var person in Model.People)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("Person", "Home", new { id = person.Guid })">@person.Name</a>
+                </td>
+                <td>@person.Company</td>
+                <td>@person.Email</td>
+                <td>@person.Phone</td>
+                <td>
+                    @foreach (var tag in person.TagList)
+                    {
+                        <a href="@Url.Action("People", "Home", new { pageSize = Model.Pager.PageSize, filter = tag.Name })">@tag.Name </a>
+                    }
+                </td>
+
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <div class="row">
+        @using (Html.BeginForm("People", "Home", new { page = Model.Pager.CurrentPage, pageSize = Model.Pager.PageSize }))
+        {
+            @Html.Hidden("page", Model.Pager.CurrentPage)
+            <div class="col-lg-2">
+                @Html.DropDownList("pageSize", new SelectList(new List<int> { 5, 10, 20, 50 }), "Page Size", new { @class = "form-control", onchange = "this.form.submit()" })
+            </div>
+        }
+    </div>
+    
+        @if (Model.Pager.EndPage > 1)
+        {
+            <ul class="pagination">
+                @if (Model.Pager.CurrentPage > 1)
+                {
+                    <li>
+                        <a href="@Url.Action("People", "Home")">First</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("People", "Home", new { page = Model.Pager.CurrentPage - 1, pageSize = Model.Pager.PageSize })">Previous</a>
+                    </li>
+                }
+
+                @for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+                {
+                    <li class="@(page == Model.Pager.CurrentPage ? "active" : "")">
+                        <a href="@Url.Action("People", "Home", new { page = page, pageSize = Model.Pager.PageSize })">@page</a>
+                    </li>
+                }
+
+                @if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+                {
+                    <li>
+                        <a href="@Url.Action("People", "Home", new { page = Model.Pager.CurrentPage + 1 })">Next</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("People", "Home", new { page = Model.Pager.TotalPages })">Last</a>
+                    </li>
+                }
+            </ul>
+        }				
+    
+
+</div>
+
+<!-- /.container -->
+
