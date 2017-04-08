@@ -1,9 +1,0 @@
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\WorkDayCalculator.exe.config
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\WorkDayCalculator.exe
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\WorkDayCalculator.pdb
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\CSharpTest.dll
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\bin\Debug\CSharpTest.pdb
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\obj\Debug\WorkDayCalculator.csprojResolveAssemblyReference.cache
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\obj\Debug\WorkDayCalculator.exe
-C:\Users\Bars\Desktop\задания для стажировки\Задание для тестирование\Задание для тестирование кодеров\WorkDayCalculator\obj\Debug\WorkDayCalculator.pdb
