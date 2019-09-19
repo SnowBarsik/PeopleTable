@@ -35,6 +35,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'MyTestArtifact'
+    publishLocation: 'FilePath'
+    TargetPath: '\\my\share\PeopleTable'
+
+- task: PublishBuildArtifacts@1
+  inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: MyTestArtifact
 
