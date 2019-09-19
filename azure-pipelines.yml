@@ -47,4 +47,5 @@ steps:
     buildVersionToDownload: 'latest'
     allowPartiallySucceededBuilds: true
     downloadType: 'single'
+    artifactName: MyTestArtifact
     downloadPath: '$(System.ArtifactsDirectory)'
